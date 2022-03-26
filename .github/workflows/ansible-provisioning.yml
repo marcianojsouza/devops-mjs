@@ -32,7 +32,7 @@ jobs:
           echo "ANSIBLE_PRIVATE_KEY_FILE=$ANSIBLE_PLAYBOOK_PATH/$PRIVATE_KEY" >> $GITHUB_ENV
       - name: create key pair
         run: |
-          ssh-keygen -t rsa -N "" -f $ANSIBLE_PLAYBOOK_PATH/$PRIVATE_KEY
+          ssh-keygen -t rsa -N "" -f $ANSIBLE_PLAYBOOK_PATH/$PRIVATE_KEY 
           chmod 400 $ANSIBLE_PLAYBOOK_PATH/$PRIVATE_KEY.pub
       - name: provisioning
         run: |
