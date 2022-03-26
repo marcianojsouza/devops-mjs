@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/marcianojsouza/devops-mjs/issues"
   },
-  "homepage": "https://github.com/marcianojsouza/devops-mjs#readme"
+  "homepage": "https://github.com/marcianojsouza/devops-mjs#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "global": "^4.4.0",
+    "yarn": "^1.22.18"
+  }
 }
